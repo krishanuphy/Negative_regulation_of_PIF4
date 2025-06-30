@@ -21,7 +21,7 @@ p_e2 = 39.8;
 t0 = mod(t,24);
 t1 = t0 - D;
 t2 = t0 - 24;
-k0 = 5;
+k0 = 5;     %sharpness parameter of oscillatory function
 
 if t0 >= D      %Condition for day cycle
     L = 0;
