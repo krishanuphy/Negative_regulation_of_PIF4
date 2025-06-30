@@ -139,7 +139,7 @@ xlabel('Day Length(Hour)','Fontsize',14)
 ylabel('Growth','Fontsize',14)
 xlim([1 24])
 
-txt = ['Hypocotyl Length vs Day Length Graph,Model Code No - 18a, Mutp - 0.04,1,4,5.9 and' ...
+txt = ['Hypocotyl Length vs Day Length Graph,Model Code No - 18a, Mutp - 0.65,1,4,5.9 and' ...
     '  and P_s_e_l_f = 25'];
 sgtitle(txt);
 
