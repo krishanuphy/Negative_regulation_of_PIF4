@@ -2,7 +2,7 @@
 
 % p_self included here only
 function [diff] = model(t,dp,p_b,m_b,k_r,d_e,m_c,p_cl,p_cd,d_c...
-    ,m_p,p_p,p_pe,d_p,k_pc,d_pb,p_g,k_g,p_gp,p_ge,p_gb,p_f,p_fp,d_f,k_0,p_0,D,p_t1,k_01,...
+    ,m_p,p_p,p_pe,d_p,k_pc,d_pb,p_g,k_g,p_gp,p_ge,p_gb,p_f,p_fp,d_f,k_0,p_0,D,p_t1,...
     d_ec) 
 
 
@@ -52,7 +52,7 @@ end
 
 
 
-if P >= p_t1    %Introducing Threshold
+if P >p_t1    %Introducing Threshold
     
     p_s2 = m_p*(p_p/(1+p_pe*E+p_0*P));
     
@@ -66,7 +66,7 @@ if P < p_t1     %Introducing Threshold
 
     p_s2 = m_p*(p_p/(1+p_pe*E));  %%%%% activator
     
-    p_s1 = k_01 ; %%%% 
+    p_s1 = k_0 ; %%%% 
 
     
 end
