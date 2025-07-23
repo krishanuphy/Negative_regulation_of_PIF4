@@ -48,7 +48,7 @@ if D == 24
 end
 
 
-if P >= p_t1
+if P > p_t1
     
     p_s2 = m_p*(p_p/(1+p_pe*E+p_0*P));
     
@@ -91,7 +91,7 @@ if D == 24
 end
 
 
-if P >= p_t1
+if P > p_t1
     
     p_s2 = m_p*(p_p/(1+p_pe*E+p_0*P));
     
@@ -126,7 +126,7 @@ if D == 24
 end
 
 
-if P >= p_t1
+if P > p_t1
     
     p_s2 = m_p*(p_p/(1+p_pe*E+p_0*P));
     
