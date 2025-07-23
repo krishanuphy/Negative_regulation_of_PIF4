@@ -36,8 +36,7 @@ p_f = 450;        %Production rate of GUS
 p_fp = 22;        %Intensity of PIF4’s inhibition of GUS expression
 d_f = 0.0009;     %Decay rate of GUS
 k_0 = 10;         %Basal rate of GUS production
-p_0 = 25;         %Intensity of autoinhibition for PIF4 synthesis
-k_01 = k_0;       
+p_0 = 25;         %Intensity of autoinhibition for PIF4 synthesis       
 d_ec = 0.01;      %Inhibition rate of ELF3 by COP1
  
 p_th = [0.2 0.04 0.2 1.3];       %Threshold Value for four genotype
@@ -86,7 +85,7 @@ tc6 = 0;   %GUS activity initial condition
 tc = [tc1 tc2 tc3 tc4 tc5 tc6];
 
 [IVSOL, DVSOL] = ode45(@(t,dp) hyp_function(t,dp,p_b,m_b,k_r,d_e,m_c,p_cl,p_cd,d_c...
-    ,m_p,p_p,p_pe,d_p,k_pc,d_pb,p_g,k_g,p_gp,p_ge,p_gb,p_f,p_fp,d_f,k_0,p_0,D,p_t1,k_01,...
+    ,m_p,p_p,p_pe,d_p,k_pc,d_pb,p_g,k_g,p_gp,p_ge,p_gb,p_f,p_fp,d_f,k_0,p_0,D,p_t1,...
     d_ec),domain,tc);    
                                
 
